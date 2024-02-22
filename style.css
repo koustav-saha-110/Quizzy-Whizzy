@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'onix';
+    src: url('Azonix-1VB0.otf');
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'momcake';
+    src: url('MomcakeBold-WyonA.otf');
+}
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --wcolor: white;
+    --bcolor: black;
+    --rcolor: crimson;
+    --whcolor: wheat;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background: var(--bcolor);
+    cursor: crosshair;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-list {
+    color: var(--wcolor);
+    font-family: 'onix';
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    transition: all ease-in-out 0.4s;
+}
+
+.nav-list:hover {
+    transform: scale(1.5) rotate(10deg);
+}
+
+#page-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#main-text , #share-text {
+    width: 70%;
+    color: var(--wcolor);
+    text-align: center;
+    font-family: 'momcake';
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px var(--whcolor);
+    transition: all ease-in-out 0.3s;
+}
+
+#main-text::selection, #main-text span::selection , #share-text::selection, #share-text span::selection {
+    color: var(--rcolor);
+    background-color: var(--wcolor);
+}
+
+#main-text span, .redhoja {
+    color: var(--rcolor);
+    text-shadow: 2px 2px 6px var(--wcolor);
+}
+
+#play-button, #register-button, #join-button {
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-family: 'gilroy';
+}
+
+#play-button a, #register-button a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--rcolor);
+}
+
+#page-2 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+#part-1, #part-2 {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+#part-2 {
+    background-image: url('https://images.unsplash.com/photo-1581078426770-6d336e5de7bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#part-1 {
+    background-image: url('https://images.unsplash.com/photo-1557318041-1ce374d55ebf?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#text-2 {
+    color: var(--wcolor);
+    font-family: 'gilroy';
+    text-decoration: none;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: capitalize;
+    width: 65%;
+    text-shadow: 2px 2px 4px var(--wcolor);
+}
+
+#join-button a {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--rcolor);
+}
+
+#joining-para {
+    color: var(--wcolor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 75%;
+    font-size: 20px;
+    font-family: 'momcake';
+    letter-spacing: 2px;
+    line-height: 22px;
+    text-shadow: 3px 3px 10px var(--wcolor);
+}
+
+#page-3 {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1552664862-db5607e91378?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#share-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'onix';
+    color: var(--wcolor);
+    font-size: 70px;
+    width: 70%;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+#footer {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#f-1 {
+    width: 25%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#f-2 {
+    width: 25%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#f-3 {
+    width: 25%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#f-1 h1,a {
+    color: var(--wcolor);
+    text-decoration: none;
+    font-family: 'gilroy';
+    text-align: center;
+}
+
+#f-2 h1,p {
+    color: var(--wcolor);
+    text-decoration: none;
+    font-family: 'gilroy';
+    text-align: center;
+}
+
+#f-2 p {
+    text-align: center;
+}
+
+#f-1 h1, #f-2 h1 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'onix';
+}
+
+.email-button {
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#f-3 h1 {
+    color: var(--wcolor);
+    text-align: center;
+    font-family: 'onix';
+    font-size: 20px;
+}
+
+.fa-solid {
+    font-size: 20px;
+    color: var(--wcolor);
+}
+
+@media (max-width: 1190px) {
+    #joining-para {
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 479px) {
+    .nav-list {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 1012px) {
+    #text-2 {
+        font-size: 30px;
+    }
+
+    #join-button a {
+        font-size: 12px;
+    }
+
+    #join-button {
+        padding: 7px 20px;
+    }
+}
+
+@media (max-width: 930px) {
+    #main-text, #share-text {
+        font-size: 65px;
+    }
+
+    .email-button {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    #main-text, #share-text {
+        font-size: 50px;
+    }
+
+    #play-button a , #register-button a {
+        font-size: 12px;
+    }
+
+    #play-button , #register-button {
+        padding: 7px 20px;
+    }
+
+    #joining-para {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    #f-1 h1 {
+        font-size: 15px;
+    }
+
+    #f-1 a {
+        font-size: 12px;
+    }
+
+    #f-2 h1, #f-3 h1 {
+        font-size: 15px;
+    }
+
+    #f-2 p, #f-3 p {
+        font-size: 10px;
+    }
+
+    #text-2 {
+        font-size: 20px;
+    }
+}
